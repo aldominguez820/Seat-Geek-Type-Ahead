@@ -1,5 +1,6 @@
 package com.example.myapplication.ui.main
 
+import android.support.annotation.VisibleForTesting
 import com.example.myapplication.data.SeatGeekRepository
 import com.example.myapplication.data.entities.Event
 import com.example.myapplication.data.entities.ResultApi
@@ -40,7 +41,8 @@ class MainPresenter(private val seatGeekRepository: SeatGeekRepository) : MainCo
         )
     }
 
-    private fun mergeFavorites(events: List<Event>): List<Event> {
+    @VisibleForTesting
+    fun mergeFavorites(events: List<Event>): List<Event> {
         val favorites = seatGeekRepository.getFavorites()
         events.forEach { it.isOpen = it.id.toString() in favorites }
         return events

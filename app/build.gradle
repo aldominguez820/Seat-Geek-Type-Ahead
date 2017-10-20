@@ -29,6 +29,12 @@ android {
     }
 }
 
+configurations.all {
+    resolutionStrategy {
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.1.2-5'
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -66,7 +72,10 @@ dependencies {
     compile 'com.facebook.stetho:stetho:1.5.0'
 
     testCompile 'junit:junit:4.12'
+    testCompile "com.nhaarman:mockito-kotlin-kt1.1:1.5.0"
+    testCompile 'org.mockito:mockito-core:2.8.9'
 }
+
 repositories {
     mavenCentral()
 }

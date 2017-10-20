@@ -3,6 +3,8 @@ package com.example.myapplication.ui.details
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.myapplication.App
@@ -13,8 +15,6 @@ import com.example.myapplication.utils.ActivityUtils
 import com.example.myapplication.utils.ImageUtils
 import kotlinx.android.synthetic.main.activity_details.*
 import javax.inject.Inject
-import android.view.MenuItem
-import android.view.View
 
 
 class DetailsActivity : AppCompatActivity(), DetailsContract.View {
