@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SeatGeek</string>
+    <string name="load_data">Load data</string>
+    <string name="search_term">Search term</string>
+    <string name="favorite">Favorite</string>
+    <string name="favorite_text">This is one of your favorites!</string>
+</resources>
